@@ -150,19 +150,22 @@ nav.side-bar ul li.active::after {
     width: var(--curve-size);
     height: var(--curve-size);
     background-color: white;
-    border-radius: 50%;
+  
     position: absolute;
 }
 nav.side-bar ul li.active::before {
   
-    bottom: calc(-1 * var(--curve-size));
-    right: 0;
-
-    box-shadow: calc(-1 * var(--curve-size) * 0.5) calc(-1 * var(--curve-size) * 0.5) yellow;
+    bottom: 100%;
+    right : 0 ;
+    box-shadow: 0 17px 0 #007372;
+    border-bottom-right-radius: 13px;
 }
 nav.side-bar ul li.active::after {
-    top: calc(-1 * var(--curve-size));
-    left: 0;
-    box-shadow: calc(-1 * var(--curve-size) * 0.5) calc(var(--curve-size) * 0.5) yellow;
+    top: 100%;
+    /* left: 0; */
+    right: 0;
+    /* bottom: 100%; */
+    border-top-right-radius: 13px;
+    box-shadow: 0 -17px 0 #007372;
    
 }
