@@ -143,23 +143,26 @@ nav.side-bar ul li.active {
 
 
 }
-/* nav.side-bar ul li.active::before,
+nav.side-bar ul li.active::before,
 nav.side-bar ul li.active::after {
     --curve-size: calc(2 * var(--radius-size));
     content: '';
     width: var(--curve-size);
     height: var(--curve-size);
-    background-color: var(--color-primary);
+    background-color: white;
     border-radius: 50%;
     position: absolute;
 }
 nav.side-bar ul li.active::before {
-    top: calc(-1 * var(--curve-size));
+  
+    bottom: calc(-1 * var(--curve-size));
     right: 0;
-    box-shadow: calc(-1 * var(--curve-size) * 0.5) calc(var(--curve-size) * 0.5) var(--color-secondary);
+
+    box-shadow: calc(-1 * var(--curve-size) * 0.5) calc(-1 * var(--curve-size) * 0.5) yellow;
 }
 nav.side-bar ul li.active::after {
-    bottom: calc(-1 * var(--curve-size));
+    top: calc(-1 * var(--curve-size));
     left: 0;
-    box-shadow: calc(-1 * var(--curve-size) * 0.5) calc(-1 * var(--curve-size) * 0.5) var(--color-secondary);
-} */
+    box-shadow: calc(-1 * var(--curve-size) * 0.5) calc(var(--curve-size) * 0.5) yellow;
+   
+}
